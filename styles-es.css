@@ -193,7 +193,7 @@ input[name = 'firstname'] {
 
 .input-div input {
   height: 20px;
-  width: 140px;
+  width: 130px;
   border: 0;
   border-radius: 6px;
   outline: 0;
@@ -211,7 +211,7 @@ label {
 select {
   font-family: 'Montserrat', sans-serif;
   height: 20px;
-  width: 140px;
+  width: 130px;
   border: 0;
   border-radius: 6px;
   font-size: 12px;
