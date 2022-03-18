@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.min.css">
+	<link rel="stylesheet" type="text/css" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.jquery.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="styles.css" media="screen">
+
+	<script>
+		function CheckOffices(val){
+			var element=document.getElementById('office');
+			if(val=='5')
+				element.style.display='inline';
+			else
+				element.style.display='none';
+		}		
+	</script>
+
+	<title>Employee Registration Form</title>
+</head>
+
+
+<body>
+	<header>
+		<nav>
+			<div class="logo">
+				<a href="https://redsismica.uprm.edu/">
+					<img src="logo_only.png" alt="PRSN Logo">
+				</a>
+			</div>
+
+			<div class="lang-menu">
+				<a class = "a1" href="index_es.html">en-US</a>
+				<input type="checkbox" class="check">
+			</div>
+		</nav>
+	</header>
+
+
+	<form id="form" method="POST">
+		<div class="title-div">
+			<h1>RSS Monthly Test</h1>
+				
+			<div class="initial"> 
+				This form allows us to obtain confirmation from the Office of Emergency Management and their respective areas where the test message was received. You must respond. If you require any further information, please contact the Puerto Rico Seismic Network at 787-833-8433 and select option 3 to speak to a analyst 24/7.
+				<p class="required">Fields marked with a (*) are required.</p>
+			</div> 
+		</div>
+
+
+		<div class="name-div container">
+			<label for="firstname" class="name-label">
+				Full Name: 
+				<span class="required">*</span>
+			</label>
+
+			<div class="input-div">
+				<input placeholder="First Name" type="text" tabindex="1" name="firstname" id="firstname" required autofocus>
+				<input placeholder="Last Name" type="text" tabindex="2" name="lastname" id="lastname" required>
+			</div>
+		</div>
+
+
+		<div class="occupation-div container">
+			<label for="occupation" class="occupation-label">
+				Occupation:
+				<span class="required">*</span>
+			</label>
+
+			<div class="input-div">
+				<input type="text" tabindex="3" name="occupation" id="occupation" required>
+			</div>
+		</div>
+
+
+		<div class="datetime-div container">
+			<label for="datetime" class="datetime-label">
+				Entry Date:
+				<span class="required">*</span>
+			</label>
+
+			<div class="input-div">
+				<input type="datetime-local" tabindex="4" name="datetime" id="datetime" required>
+			</div>
+		</div>
+
+
+		<div class="office-div container">
+			<label for="office" class="office-label">
+				Office: 
+				<span class="required">*</span>
+			</label>
+
+			<div class="input-div">
+				<select class="chosen-select"  name="office" tabindex="5" onchange='CheckOffices(this.value);'> 
+					<option value="">&nbsp;</option>
+					<option value="1">Control Estatal NMEAD</option>
+					<option value="2">Policia Municipal</option>
+					<option value="3">Zona NMEAD</option>
+					<option value="4">OMME</option>
+					<option value="5">Other</option>
+				</select>
+				<input type="text" name="office" id="office" placeholder="Type your office" style='display:none;'>
+			</div>
+		</div>
+
+
+		<div class="municipality-div container">
+			<label for="municipality" class="municipality-label">
+				Municipality: 
+				<span class="required">*</span>
+			</label>
+
+			<div class="input-div">
+				<select name="municipality" data-placeholder="Choose your municipality" class="chosen-select" id="municipality" tabindex="6">
+					<option value="">&nbsp;</option>
+					<option value="Aguada">Aguada</option>
+					<option value="Aguadilla">Aguadilla</option>
+					<option value="Añasco">Añasco</option>
+					<option value="Arecibo">Arecibo</option>
+					<option value="Arroyo">Arroyo</option>
+					<option value="Barceloneta">Barceloneta</option>
+					<option value="Bayamón">Bayamón</option>
+					<option value="Cabo Rojo">Cabo Rojo</option>
+					<option value="Caguas">Caguas</option>
+					<option value="Camuy">Camuy</option>
+					<option value="Canóvanas">Canóvanas</option>
+					<option value="Carolina">Carolina</option>
+					<option value="Cataño">Cataño</option>
+					<option value="Ceiba">Ceiba</option>
+					<option value="Culebra">Culebra</option>
+					<option value="Dorado">Dorado</option>
+					<option value="Fajardo">Fajardo</option>
+					<option value="Guánica">Guánica</option>
+					<option value="Guayama">Guayama</option>
+					<option value="Guayanilla">Guayanilla</option>
+					<option value="Guaynabo">Guaynabo</option>
+					<option value="Hatillo">Hatillo</option>
+					<option value="Humacao">Humacao</option>
+					<option value="Isabela">Isabela</option>
+					<option value="Juana Díaz">Juana Díaz</option>
+					<option value="Lajas">Lajas</option>
+					<option value="Loíza">Loíza</option>
+					<option value="Luquillo">Luquillo</option>
+					<option value="Manatí">Manatí</option>
+					<option value="Maunabo">Maunabo</option>
+					<option value="Mayagüez">Mayagüez</option>
+					<option value="Naguabo">Naguabo</option>
+					<option value="Patillas">Patillas</option>
+					<option value="Peñuelas">Peñuelas</option>
+					<option value="Ponce">Ponce</option>
+					<option value="Quebradillas">Quebradillas</option>
+					<option value="Rincón">Rincón</option>
+					<option value="Río Grande">Río Grande</option>
+					<option value="Salinas">Salinas</option>
+					<option value="San Juan">San Juan</option>
+					<option value="Santa Isabel">Santa Isabel</option>
+					<option value="Toa Baja">Toa Baja</option>
+					<option value="Vega Alta">Vega Alta</option>
+					<option value="Vega Baja">Vega Baja</option>
+					<option value="Vieques">Vieques</option>
+					<option value="Yabucoa">Yabucoa</option>
+					<option value="Yauco">Yauco</option>
+				</select>
+			</div>
+		</div>
+		
+
+		<div class="feedback-div container">
+			<label for="the-textarea" class="feedback-label">
+				Comments:
+			</label>
+
+			<div class="input-div">
+				<textarea name="the-textarea" id="the-textarea" maxlength="150" placeholder="Type your message here..." tabindex="7"></textarea>
+
+				  <div id="the-count">
+				    <span id="current">0</span>
+				    <span id="maximum">/ 150</span>
+				  </div>
+			</div>
+		</div>
+
+
+		<div class="buttom-div">
+			<button class="btn" name="submit" type="submit" data-submit="...Sending">Submit</button>
+		</div>
+
+
+		<div class="last-div">
+			<p class="never">Never submit passwords through this form</p>
+			<h2>PRSN Forms</h2>
+		</div>
+	</form>
+
+	<!--- Javascript to initialize the code list -->
+	<script src="lang.js"></script>
+	<script src="textcount.js"></script>
+	<script>
+		$(".chosen-select").chosen();
+	</script>
+</body>
+</html>

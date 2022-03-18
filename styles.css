@@ -1,0 +1,247 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;500;700;800&display=swap);
+@import url(https://necolas.github.io/normalize.css/8.0.1/normalize.css);
+
+* {
+  font-family: 'Montserrat', sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body { background-color: rgb(240, 255, 255);}
+a { text-decoration: none;}
+html { overflow-y: scroll;}
+
+nav {
+  background-color: rgb(226, 239, 218);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 40%;
+  margin: auto;
+}
+
+.lang-menu {
+  width: 40%;
+  margin: auto;
+  text-align: right;
+  font-size: 12px;
+}
+
+img {
+  height: 65px;
+  width: 65px;
+  margin: 7px 0px 5px;
+}
+
+.lang-menu > .a1 {
+  color: black;
+  padding-top: 7.5px;
+  padding-right: 12px;
+}
+
+input[type="checkbox"] {
+  position: relative;
+  width: 30px;
+  height: 15px;
+  -webkit-appearance: none;
+  vertical-align: text-top;
+  background: #c6c6c6;
+  outline: none;
+  border-radius: 8px;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+}
+
+input:checked[type="checkbox"] {
+  background: #03a9f4;
+}
+
+input[type="checkbox"]:before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 8px;
+  top: 0;
+  left: 0;
+  background: #fff;
+  transform: scale(1.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: .5s;
+}
+
+input:checked[type="checkbox"]:before {
+  left: 15px;
+}
+
+.title-div {
+  background-color: rgb(226, 239, 218);
+  width: 90%;
+  margin: auto;
+  margin-top: 20px;
+  border-radius: 8px;
+  border-top: 8px solid rgb(88, 127, 81);
+  padding: 10px 10px 10px;
+  text-align: justify;
+  font-size:12px;
+  line-height: 1.3;
+  box-shadow: 8px 8px 10px 0 rgba(28, 9, 80, 0.10);
+}
+
+h1 {
+  font-size: 18px;
+  text-align: center;
+  font-weight: bold;
+}
+
+form {
+  width: 100%;
+}
+
+.name-div, .occupation-div, .datetime-div, .office-div, .municipality-div, .feedback-div {
+  background-color: rgb(226, 239, 218);
+  width: 90%;
+  margin: auto;
+  border-radius: 8px;
+  padding: 25px 10px 25px;
+  text-align: left;
+  font-size:12px;
+  box-shadow: 8px 8px 10px 0 rgba(28, 9, 80, 0.10);
+  margin-top: 25px;
+}
+
+.feedback-div {
+  width: 90%;
+  margin: auto;
+  height: 125px;
+  margin-top: 25px;
+}
+
+.container .input-div {
+  padding-top: 10px;
+}
+
+#office {
+  margin-left: 14px;
+}
+
+
+.btn {
+  height: 25px;
+  width: 80px;
+  background-color: rgb(184, 224, 190);
+  border-radius: 8px;
+  font-size: 12px;
+  letter-spacing: .5px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+}
+
+.Submit {
+  border-color: #04AA6D;
+  color: green;
+}
+
+.Submit:hover {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.buttom-div {
+  width: 90%;
+  margin: auto;
+  padding: 50px 0px 15px;
+  text-align: left;
+  box-shadow: rgba(28, 9, 80, 0.10);
+}
+
+.never {
+  width: 90%;
+  margin: auto;
+  padding: 0px 0px 25px;
+  text-align: left;
+  font-size:12px;
+}
+
+h2 {
+  font-size: 16px;
+  text-align: center;
+  font-weight: bold;
+  color: rgb(162, 164, 166);
+  margin-bottom: 10px;
+}
+
+input[name = 'firstname'] {
+  margin-bottom: 5px;
+  margin-right: 5px;
+}
+
+.required {
+  font-size: 12px;
+  color: rgb(250, 50, 35);
+}
+
+.initial > p {
+  margin-top: 15px;
+}
+
+.input-div input {
+  height: 20px;
+  width: 170px;
+  border: 0;
+  border-radius: 6px;
+  outline: 0;
+  border-bottom: 1.5px solid rgb(220,215,215);
+  font-size: 12px;
+  font-family: 'Montserrat', sans-serif;
+  margin-right: 14px;
+  padding: 1px 10px;
+}
+
+label {
+  padding-left: 10px;
+}
+
+select {
+  font-family: 'Montserrat', sans-serif;
+  height: 20px;
+  width: 170px;
+  border: 0;
+  border-radius: 6px;
+  font-size: 12px;
+  border-bottom: 1.5px solid rgb(220,215,215);
+
+}
+
+option {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+}
+
+textarea {
+  font-size: 12px;
+  letter-spacing: 1px;
+  padding: 3px 10px;
+  height: 50px;
+  width: 80%;
+  line-height: 1.5;
+  border-radius: 8px;
+  outline: 0;
+  resize: none;
+  border: 0.2px solid #ccc;
+  box-shadow: 1px 1px 1px rgba(28, 9, 80, 0.10);
+}
+
+#the-count {
+  float: right;
+  padding: 0.1rem 0 0 0;
+  font-size: 0.875rem;
+  position: absolute;
+  font-size: 10px;
+  margin-left: 10px;
+}
