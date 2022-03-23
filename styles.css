@@ -30,10 +30,6 @@ nav {
   display: flex;
 }
 
-header {
-   position: fixed;
-}
-
 .lang-menu {
   width: 40%;
   margin: auto;
