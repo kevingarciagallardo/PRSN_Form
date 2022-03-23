@@ -1,4 +1,4 @@
-var check=document.querySelector(".check");
+var check=document.querySelector(".check-en");
 check.addEventListener('click', language);
 
 function language(){
